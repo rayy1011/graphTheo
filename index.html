@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graph Theory Patrol Routing — BSM CS3B</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false,strict:false});"></script>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-tag">BSM CS3B · Graph Theory Final Paper</div>
+  <h1>Optimizing Barangay<br>Patrol Routes</h1>
+  <p class="hero-sub">A graph-theoretic approach using the Chinese Postman Problem and Dijkstra's Algorithm applied to Barangay Tabing-Ilog, Marilao, Bulacan.</p>
+  <div class="hero-stats">
+    <div class="hs"><span class="n">69</span><span class="l">Vertices</span></div>
+    <div class="hs"><span class="n">82</span><span class="l">Edges</span></div>
+    <div class="hs"><span class="n">6.88 km</span><span class="l">Total Roads</span></div>
+    <div class="hs"><span class="n">9.88 km</span><span class="l">Optimal Patrol</span></div>
+    <div class="hs"><span class="n">44</span><span class="l">Odd-Degree Vertices</span></div>
+    <div class="hs"><span class="n">22</span><span class="l">Corrective Pairs</span></div>
+  </div>
+  <div class="hero-authors">Baltazar · Gapac · Lacuna · Prestosa · Sumodlayon</div>
+</div>
+
+<nav class="tab-bar" id="tabBar">
+  <button class="tab-btn active" data-tab="front" onclick="switchTab('front')">
+    <span class="tab-dot" style="background:#2D5A3D"></span>Homepage
+  </button>
+  <button class="tab-btn" data-tab="abstract" onclick="switchTab('abstract')">
+    <span class="tab-dot" style="background:#4A8C62"></span>Abstract
+  </button>
+  <button class="tab-btn" data-tab="graph" onclick="switchTab('graph')">
+    <span class="tab-dot" style="background:#C55A1A"></span>The Graph
+  </button>
+  <button class="tab-btn" data-tab="cpp" onclick="switchTab('cpp')">
+    <span class="tab-dot" style="background:#1A4A7A"></span>CPP
+  </button>
+  <button class="tab-btn" data-tab="blossom" onclick="switchTab('blossom')">
+    <span class="tab-dot" style="background:#5A3A7A"></span>Blossom
+  </button>
+  <button class="tab-btn" data-tab="dijkstra" onclick="switchTab('dijkstra')">
+    <span class="tab-dot" style="background:#8A2020"></span>Dijkstra
+  </button>
+  <button class="tab-btn" data-tab="hotspot" onclick="switchTab('hotspot')">
+    <span class="tab-dot" style="background:#7A6010"></span>Hotspot
+  </button>
+  <button class="tab-btn" data-tab="sensitivity" onclick="switchTab('sensitivity')">
+    <span class="tab-dot" style="background:#8A5020"></span>Sensitivity
+  </button>
+  <button class="tab-btn" data-tab="results" onclick="switchTab('results')">
+    <span class="tab-dot" style="background:#2D5A3D"></span>Results
+  </button>
+</nav>
+
+<div class="tab-panel active" id="tab-front">
+  <div class="main">
+    <section class="section">
+      <div class="sec-intro">
+        <div class="sec-num">00</div>
+        <div>
+          <div class="sec-eyebrow">Cover Page</div>
+          <h2>Patrol with Benefits</h2>
+        </div>
+      </div>
+      <p>This interactive guide documents the full mathematical analysis of patrol route optimization for Barangay Tabing-Ilog, Marilao, Bulacan.</p>
+      </section>
+  </div>
+</div>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+</body>
+</html>

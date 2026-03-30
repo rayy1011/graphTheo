@@ -1,0 +1,96 @@
+/* ── ROOT VARIABLES ── */
+:root {
+  --bg: #F8F6F1;
+  --surface: #FFFFFF;
+  --surface2: #F2EFE8;
+  --border: rgba(60, 50, 30, 0.11);
+  --border2: rgba(60, 50, 30, 0.22);
+  --text: #1A1610;
+  --text2: #5A5248;
+  --text3: #9A9088;
+  --accent: #2D5A3D;
+  --accent2: #4A8C62;
+  --accent-light: #EBF4EE;
+  --orange: #C55A1A;
+  --orange-light: #FDF0E8;
+  --blue: #1A4A7A;
+  --blue-light: #E8F0F8;
+  --purple: #5A3A7A;
+  --purple-light: #F0EAF8;
+  --tab-h: 52px;
+}
+
+/* ── LAYOUT & TYPOGRAPHY ── */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+/* ── HERO ANIMATION ── */
+.hero {
+  background: var(--accent);
+  color: #fff;
+  padding: 5rem 2rem 3.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes bgScroll {
+  0% { background-position: 0 0; }
+  100% { background-position: 40px 40px; }
+}
+
+/* ── TAB NAVIGATION ── */
+.tab-bar {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: rgba(248, 246, 241, .96);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border2);
+  display: flex;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0 18px;
+  height: var(--tab-h);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  right: 12px;
+  height: 2.5px;
+  background: var(--accent);
+}
+
+/* ── COMPONENTS ── */
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+}
+
+.callout {
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin: 1.4rem 0;
+  border: 1px solid;
+}
